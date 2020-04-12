@@ -1,0 +1,301 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+header{
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
+	background: url('images/rain.jpg');
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+}
+.overlay{
+	background: rgba(41, 128, 185,0.4);
+	padding: 100px 0 200px;
+}
+header ul{
+	list-style: none;
+	margin: 50px 0;
+}
+header ul li{
+	display: inline-block;
+}
+header ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 18px;
+}
+header h1{
+	font-size: 90px;
+}
+header h3{
+	font-size: 22px;
+	margin: 50px 0 100px;
+}
+header h3:before, header h3:after{
+	content: "";
+	display: inline-block;
+	width: 13%;
+	height: 3px;
+	background: #314F58;
+	vertical-align: middle;
+}
+header h3:before{
+	margin-right: 50px;
+}
+header h3:after{
+	margin-left: 50px;
+}
+header .btn{
+	text-decoration: none;
+	display: inline-block;
+	padding: 20px 60px;
+	background: #4FC3AE;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 30px;
+}
+
+/* Header End */
+.feature-area{
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
+	background: #EEEEF0;
+	padding: 100px 0;
+	text-align: center;
+}
+.middle-area{
+	width: 80%;
+	margin: 0 auto;
+}
+.feature{
+	width: 32%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+h2{
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #5A5F63;
+	padding: 25px 0 20px;
+	border-bottom: 2px solid #E5E5E7;
+}
+
+p{
+	font-size: 18px;
+	line-height: 30px;
+	color: #C8C9CB;
+	margin: 20px 0;
+}
+
+/* Feature Area End */
+
+.blog-area{
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
+	padding: 100px 0;
+	background: #F5F5F5;
+}
+.blog-area:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.blog{
+	width: 46%;
+	float: left;
+	padding: 0 20px 0 0;
+	box-sizing: border-box;
+}
+.blog h2{
+	display: inline-block;
+}
+.blog:first-child{
+	margin-right: 8%;
+}
+.blog img{
+	width: 100%;
+}
+.btn2{
+	display: inline-block;text-decoration: none;
+	padding: 15px 25px;
+	border-radius: 25px;
+	background: #4FC3AE;
+	color: #fff;
+	font-size: 18px;
+	margin: 10px 0 0;
+}
+ /* Blog Area End */
+
+.support{
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
+	padding: 100px 0;
+	background: #EEEEF0;
+}
+.support .btn2{
+	background: #D1D4D9;
+}
+/* Support Area End */
+
+.product-area{
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
+	padding: 100px 0;
+	background: #F5F5F5;
+}
+.product-area:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.product{
+	width: 31%;
+	float: left;
+}
+.product img{
+	width: 95%;
+}
+.product:nth-child(2){
+	margin: 0 3.5%;
+}
+.product .btn2{
+	background: transparent;
+	color: #4FC3AE;
+	padding: 0;
+}
+/* Product Area End */
+
+.bg-blog2{
+	background: #EEEEF0 !important;
+}
+/* Blog 2 End */
+.bg-blog3{
+	background: #F5F5F5;
+}
+.bg-3{
+	background: #4FC3AE;
+	text-align: center;
+}
+.bg-3 h2{
+	display: inline-block;
+	color: #C5EBE4;
+}
+/* Blog 3 End */
+.client{
+	width: 100%;
+}
+.client img{
+	width: 15%;
+	padding: 30px;
+}
+/* Client End */
+
+footer{
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
+	padding: 25px 0;
+}
+footer:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.footer-left{
+	width: 50%;
+	float: left;
+}
+.footer-right{
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+.footer-right a{
+	text-decoration: none;
+	color: #BBBCBE;
+	font-size: 20px;
+	display: inline-block;
+	padding: 0 10px;
+}
+
+
+/* Responsive Code */
+ 
+@media all and (max-width: 600px){
+	header ul li {
+		display: block;
+	}
+	header h3::before, header h3::after {
+		display: none;
+	}
+	.feature {
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	.blog:first-child {
+		margin-right: 0;
+	}
+	.blog, .product {
+		width: 90%;
+		float: none;
+		margin: 0 auto 20px; 
+	}
+	.product:nth-child(2) {
+		margin: 0 auto 20px;
+	}
+	.client img {
+		width: 40%;
+	}
+	.footer-left, .footer-right {
+		width: 90%;
+		float: none;
+		margin: auto;
+		text-align: center;
+	}
+	.footer-left p {
+		font-size: 14px;
+		line-height: 20px;
+		}
+}
+
+@media all and (max-width: 320px){
+	.overlay {
+		padding: 50px 0;
+	}
+	header ul li a {
+		padding: 5px 10px;
+		font-size: 14px;
+	}
+	header h1 {
+		font-size: 30px;
+	}
+	header h3 {
+		font-size: 16px;
+		margin: 20px 0;
+	}
+	header .btn {
+		padding: 5px 10px;
+		font-size: 14px;
+	}
+}
+
+
+
+
+
+
+
